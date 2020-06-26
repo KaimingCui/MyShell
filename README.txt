@@ -1,13 +1,30 @@
-Project Name:CSCI 503 Operating System Lab2
 Author: Kaiming Cui
 Email: cuik@iu.edu
+
+Description:
+My own shell has the following 4 features:
+• A command line parser to process your text input, print an error message if the command line is
+not valid.
+• Input may include file redirection: <, >, and/or >>
+• Input may have many pipes: cmd1 | cmd2 | cmd3 | … | cmdN
+• Input may support the background: &
+
+It looks like the following pseudocode:
+while (1) {
+printf(“your prompt”); 
+Read one line from the user; 
+Parse the line into an array of commands; 
+Finally, execute the array of parsed commands if the input is a valid command line; //System calls
+}
+
+
 
 Document:
 The tar ball "Lab2_KaimingCui.tar" contains four items: a C source code "MyShell.c", a Makefile, a README.txt and a header file called "header.h".
 
 Environment:
-This project is developed in C language on tesla server by using vim.
-It can run on tesla server.
+This project is developed in C language on Linux server by using vim.
+It can run on any linux server.
 
 Dependency:
 #include <stdio.h>
